@@ -1,0 +1,143 @@
+#bikes{
+  padding-top: 20px;
+  gap: 20px;
+}
+  .nimbus-bg{
+    background: var(--cor-11);
+    color: white;
+  }
+  .nimbus-introducao p{
+    margin-bottom: 30px;
+  }
+.nimbus-introducao-texto a{
+  max-width: max-content;
+}
+.nimbus-introducao-texto{
+  margin-bottom: 40px;
+  gap: 10px;
+}
+#spannimbus{
+  display: flex;
+  padding: 4px 4px 4px 0px;
+  gap: 8px;
+  background: black;
+  margin-bottom: 5px;
+  max-width: max-content;
+  border-radius: 4px;
+}
+
+
+.nimbus-introducao-texto span::before{
+  content: "";
+}
+
+
+.nimbus-atributos{
+  background: black;
+  padding: 30px 20px 0px 30px;
+  gap: 10px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+
+}
+.nimbus-atributos img{
+  width: 25px;
+  margin-bottom: 10px;
+}
+.nimbus-atributos h2{
+  margin-bottom: 10px;
+
+}
+
+#h1{margin-bottom: 10px;}
+.ficha-item{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+ margin-bottom: -20px;
+}
+.ficha-item:last-child::before{
+  display: none;
+}
+.ficha-item::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background: var(--cor-11);
+  top: 30px;
+}
+
+.ficha{background: black;
+padding: 30px 30px;
+margin-bottom: 100px;
+border-radius: 4px;
+}
+
+/* #magic, #nebula{
+  width: 800px;
+} */
+.tranquilo-bg{
+  background: var(--cor-11);
+  color: white;
+  box-shadow: inset 0px 80px white, inset 0px -70px black;
+  
+}
+.tranquilo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+margin-top: -150px;
+gap: 40px;
+}
+
+
+.tranquilo-texto{
+ align-self: center;
+}
+.tranquilo-texto h1{
+  margin-bottom: 20px;
+}
+.tranquilo-texto p{
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 800px){
+  .nimbus{display: grid;
+  grid-template-columns: 1fr;}
+  .tranquilo{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+    .tranquilo-bg{
+      margin-top: 20px;
+      box-shadow: inset 0px -70px black;
+    }
+    .tranquilo-texto{grid-row: 1;}
+    .nimbus-bicicletas-fotos{
+      grid-row: 2;
+      margin-top: -50px;
+      margin-bottom: 20px;
+    }
+    
+    #aer{
+      text-transform: uppercase
+      ;
+    }
+}
+@media(max-width: 500px){
+  .nimbus-atributos{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (min-width: 800px){
+  .bicicletas-lista ul{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+ 
+}

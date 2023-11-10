@@ -1,0 +1,159 @@
+.container{
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex{display: flex;}
+.flexcolumn{
+  display: flex;
+  flex-direction: column;
+}
+.flexrow{
+  display: flex;
+  flex-direction: row;
+}
+.grid1fr{
+display: grid;
+grid-template-columns: 1fr 1fr;}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gap40{
+  gap: 40px;
+}
+.botao{
+  max-width: max-content;
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #332200;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif; 
+}
+.link {
+  display: inline-block;
+  color: var(--p1);
+  font: 500 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 268px;
+  height: 4px;
+  background-color: currentColor;
+}
+.link:hover{
+  color: var(--cor-0);
+}
+@media (max-width: 450px){
+  .link::after{
+    display: none;
+  }
+}
+
+@media (max-width: 600px){
+  .botao{
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
+.botao:hover{
+  background: linear-gradient(#ffbf60, #e59317);
+}
+
+.botao.secundario{
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+.botao.secundario:hover{
+  background: var(--cor-9);
+}
+
+/* Titulos internos */
+.titulo-bg{
+  background: var(--cor-11) url(/img/dec/top-right.svg) no-repeat top 60px right 160px;
+  color: white;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+input[type="text"], input[type="email"], textarea, input[type="tel"], input[type="number"] {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 4px;
+  font: 500 1rem/1.5 "Poppins", sans-serif;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-p1);
+  background: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form .col-2 {
+    grid-column: 1;
+  }
+}
+
+
+textarea{
+  width: 500px;
+}
+.titulo p{
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px){
+.titulo-bg{
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.titulo p{
+  font-size: 1rem;
+  text-transform: lowercase;
+}
+}

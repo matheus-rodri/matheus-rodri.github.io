@@ -1,0 +1,184 @@
+
+  .bicicletas-bg{
+  background-color: var(--cor-11);
+  box-shadow: inset 400px 0px var(--cor-1);
+}
+.bicicletas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 40px;
+  background: url(/img/dec/top-right.svg) no-repeat top 40px right 10px;
+}
+/* .bicicletas-imagem{position: relative;}
+.bicicletas-imagem span{
+  background: var(--cor-11);
+  padding: 8px 16px 8px 8px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+} */
+/* Esse acima é o equivalente ao de baixo */
+
+.bicicletas-imagem{
+  display: grid;
+}
+.bicicletas-imagem span{
+  grid-area: 1 / -1;
+  background: var(--cor-11);
+  padding: 8px 16px 8px 8px;
+  place-self: start end;
+margin-top: 20px;
+border-radius: 5px 0 0 5px;
+}
+.bicicletas-imagem img{
+  grid-area: 1 / -1;
+}
+
+/* AQUI ^ */
+
+.bicicletas h2, .bicicletas p{
+  grid-column: 1 / -1;
+}
+
+.bicicletas-conteudo{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.bicicletas-conteudo img{
+  width: 24px;
+}
+.bicicletas-conteudo a{
+  place-self: end;
+}
+.bicicletas h2{
+  margin-bottom: 20px;
+}
+.bicicletas h2::before{
+  content: "";
+  display: block;
+  height: 8px;
+  width: 12px;
+  background-color: var(--p1);
+  margin-bottom: 8px;
+}
+.bicicletas p{
+  margin-bottom: 20px;
+}
+.bicicletas li{
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 20px; */
+}
+.bicicletas ul{
+  display: grid;
+  padding: 0;
+ gap: 16px;
+}
+
+
+@media (max-width: 800px){
+  .bicicletas{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-bg{
+    box-shadow: none;
+  }
+}
+@media (max-width: 600px){
+  .bicicletas-conteudo ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+  }
+  .bicicletas-conteudo a{
+    grid-column: 1;
+    place-self: start;
+  }
+}
+
+.bicicletas li > img{
+  margin-right: 10px;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bicicletas-texto li{display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+  .bicicletas-texto li:first-child{
+    margin-top: 30px;
+  }
+  .bicicletas-texto li:first-child:before{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 32px;
+    background: url(/img/icones/eletrica.svg);
+    margin-right: 10px;
+  }
+  
+  .bicicletas-texto li:nth-child(2):before{
+    content: "";
+    display: inline-block;
+    height:30px;
+    width: 32px;
+    background: url(/img/icones/carbono.svg);
+    margin-right: 10px;
+  
+  
+  }
+  
+  .bicicletas-texto li:nth-child(3):before{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 32px;
+    background: url(/img/icones/velocidade.svg);
+    margin-right: 10px;
+  }
+  
+  .bicicletas-texto li:nth-child(4):before{
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 32px;
+    background: url(/img/icones/rastreador.svg);
+    margin-right: 10px;
+  
+  }
+  
+  

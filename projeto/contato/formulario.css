@@ -1,0 +1,32 @@
+.formulario-item:first-child{
+  width: 40%;
+}
+
+
+.formulario{background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background: white url(/img/dec/bottom-right.svg) no-repeat right 40px bottom 20px;
+}
+  .nometelefone{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .formulario-item{
+    margin-bottom: 20px;
+  }
+
+.formulario-item:nth-child(2){
+  width: 100%;
+}
+
+
+@media (max-width: 800px){
+
+ .formulario input, textarea{
+    width: 200px;
+  }
+}

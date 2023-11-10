@@ -1,0 +1,97 @@
+.contato-bg{
+  background: var(--cor-11);
+  color: white;
+  box-shadow: inset 0px -300px var(--cor-2);
+  padding: 0;
+}
+.contato{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px;
+  width: 1200px;
+  
+}
+
+#footer-redes{
+  margin-bottom: px;
+}
+.contato-coluna-um{
+  background: black;
+  padding: 100px 50px 0px 100px;
+  grid-column: 1;
+  color: white;
+  background: var(--cor-12) url(/img/dec/bottom-left.svg) no-repeat 20px 440px;
+}
+.contato-coluna-um p{
+  color: var(--cor-3);
+}
+.contato h3{
+  margin-bottom: 20px;
+  text-align: start;
+}
+.contato-coluna-um p{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.contato-endereco{
+ margin-bottom: 20px;
+  position: relative;}
+
+.contato-endereco::before{
+  left: -25px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(/img/icones/local.svg);
+}
+
+
+.contato-email{
+  margin-bottom: 40px;
+  position: relative;
+}
+.contato-email::before{
+  left: -25px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 23px;
+  background-image: url(/img/icones/email.svg);
+}
+
+.contato-email p:nth-child(3){
+  margin-top: 60px;
+  position: relative;
+margin-bottom: 60px;}
+
+ .contato-email p:nth-child(3)::before
+{
+  left: -25px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 22px;
+  background-image: url(/img/icones/telefone.svg);
+}
+
+@media (max-width: 800px){
+  .contato{display: grid;
+  grid-template-columns: 1fr;
+  }}
+/* .nometelefone label{
+  grid-column: 1;
+}
+.nometelefone input{
+  grid-column: 1;
+} */
+
